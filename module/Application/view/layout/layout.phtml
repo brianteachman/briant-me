@@ -1,0 +1,417 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<?php echo $this->headTitle('TWeb / '. $this->translate('Brian Teachman'))->setSeparator(' / ')->setAutoEscape(false) ?>
+
+	<!-- start: Meta -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Brian Teachman">
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	<?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1') ?>
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: Facebook Open Graph -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<!-- end: Facebook Open Graph -->
+    
+    
+    <!-- Scripts -->
+    <?php echo $this->headScript()->prependFile($this->basePath() . '/js/html5.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+                                  ->prependFile($this->basePath() . '/js/bootstrap.min.js')
+                                  ->prependFile($this->basePath() . '/js/jquery.min.js') ?>
+	
+
+    <!-- start: CSS -->
+	<?php echo $this->headLink()
+					->appendStylesheet($this->basePath() . '/css/bootstrap.css')
+					->appendStylesheet($this->basePath() . '/css/bootstrap-responsive.css')
+                    ->appendStylesheet($this->basePath() . '/css/droid-sans.css')
+                    ->appendStylesheet($this->basePath() . '/css/droid-serif.css')
+                    ->appendStylesheet($this->basePath() . '/css/boogaloo.css')
+                    ->appendStylesheet($this->basePath() . '/css/economica.css')
+                    ->appendStylesheet($this->basePath() . '/css/style.css') ?>
+    <!-- <link href="http://wbpreview.com/previews/WB06739BN/css/style.css" rel="stylesheet"> -->
+
+	<!-- end: CSS -->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+	a.brand {
+		font-family: "Boogaloo" !important;
+		font-size: 55px;
+		font-weight: normal;
+		color: rgb(102, 102, 102);
+		display: block;
+		margin-top: 35px;
+		text-decoration: none;
+	}
+	</style>
+</head>
+<body>
+	
+	<!--start: Wrapper -->
+	<div id="wrapper">
+		
+		<!--start: Container -->
+		<div class="container">
+		
+		
+			<!--start: Header -->
+			<header>
+			
+				<!--start: Row -->
+				<div class="row">
+					
+					<!--start: Logo -->
+					<div class="logo span4">
+						<a class="brand" href="<?= $this->serverUrl() ?>">
+							Brian Teachman
+							<!-- <img src="./img/logo.png"> -->
+						</a>
+					</div>
+					<!--end: Logo -->
+					
+					<!--start: Social Links -->
+					<div class="span8">
+						<div id="social-links">
+							<ul class="social-small-grid">
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-twitter">
+													<a href="http://twitter.com/"></a>
+												</div>
+												<div class="social-small-info-back social-small-twitter-hover">
+													<a href="http://twitter.com/"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-facebook">
+													<a href="http://facebook.com/"></a>
+												</div>
+												<div class="social-small-info-back social-small-facebook-hover">
+													<a href="http://facebook.com/"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-youtube">
+													<a href="https://www.youtube.com/channel/UC-x1U61MdozIip2b4sIsivw"></a>
+												</div>
+												<div class="social-small-info-back social-small-youtube-hover">
+													<a href="https://www.youtube.com/channel/UC-x1U61MdozIip2b4sIsivw"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-small-item">				
+										<div class="social-small-info-wrap">
+											<div class="social-small-info">
+												<div class="social-small-info-front social-small-flickr">
+													<a href="http://flickr.com/"></a>
+												</div>
+												<div class="social-small-info-back social-small-flickr-hover">
+													<a href="http://flickr.com/"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--end: Social Links -->
+					
+				</div>
+				<!--end: Row -->
+						
+			</header>
+			<!--end: Header-->
+			
+			<!--start: Navigation-->	
+			<div class="navbar navbar-inverse">
+    			<div class="navbar-inner">
+        			<div class="container">
+          				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+            				<span class="icon-bar"></span>
+          				</a>
+          				<div class="nav-collapse collapse">
+            				<?php echo $this->navigation('navigation')
+            								->menu()
+									        ->setMinDepth(0)
+									        ->setMaxDepth(0)
+									        ->setUlClass('nav'); ?>
+          				</div>
+        			</div>
+      			</div>
+    		</div>
+			<!--end: Navigation-->
+			
+		</div>
+		<!--end: Container-->
+				
+		<!--start: Container -->
+    	<div class="container">
+			
+			<?php //echo $this->navigation('navigation')->breadcrumbs()
+							// ->setMinDepth(1) // 1 doesn't show root level pages
+							// ->setPartial(array('partial/breadcrumb.phtml', 'Application')); ?>
+			<?php echo $this->content; ?>
+			
+			<hr>
+			
+		</div>
+		<!--end: Container-->
+				
+		<!--start: Container -->
+    	<div class="container">		
+
+      		<!-- start: Footer Menu -->
+			<div id="footer-menu" class="hidden-tablet hidden-phone">
+
+				<!-- start: Container -->
+				<div class="container">
+				
+					<!-- start: Row -->
+					<div class="row">
+
+						<!-- start: Footer Menu Logo -->
+						<div class="span1">
+							<div id="footer-menu-logo">
+								<a href="<?= $this->serverUrl() ?>/#">
+									<img src="./img/logo-footer-menu.png" alt="briant logo">
+								</a>
+							</div>
+						</div>
+						<!-- end: Footer Menu Logo -->
+
+						<!-- start: Footer Menu Links-->
+						<div class="span10">
+						
+							<div id="footer-menu-links">
+
+								<ul id="footer-nav">
+
+									<li><a href="<?= $this->serverUrl ?>/">Start</a></li>
+
+									<li><a href="<?= $this->serverUrl ?>/about">About</a></li>
+
+									<li><a href="<?= $this->serverUrl ?>/services">Services</a></li>
+
+									<!-- <li><a href="<?= $this->serverUrl ?>/pricing">Pricing</a></li> -->
+								
+									<li><a href="<?= $this->serverUrl ?>/contact">Contact</a></li>
+
+								</ul>
+
+							</div>
+						
+						</div>
+						<!-- end: Footer Menu Links-->
+
+						<!-- start: Footer Menu Back To Top -->
+						<div class="span1">
+							
+							<div id="footer-menu-back-to-top">
+								<a href="<?= $this->serverUrl ?>/#"></a>
+							</div>
+					
+						</div>
+						<!-- end: Footer Menu Back To Top -->
+				
+					</div>
+					<!-- end: Row -->
+				
+				</div>
+				<!-- end: Container  -->	
+
+			</div>	
+			<!-- end: Footer Menu -->
+
+			<!-- start: Footer -->
+			<div id="footer">
+			
+				<!-- start: Container -->
+				<div class="container">
+				
+					<!-- start: Row -->
+					<div class="row">
+
+						<!-- start: About -->
+						<div class="span3">
+						
+							<h3>About Me</h3>
+							<p>
+								As a freelance web developer with 7 years experience listening to clients needs and producing what they needed on time, I can help your presence online. I am most interested in finding problems that can and should be automated and developing eloquent solutions for them.
+							</p>
+							
+						</div>
+						<!-- end: About -->
+
+						<!-- start: Photo Stream -->
+						<div class="span3">
+						
+							<h3>Photo Stream</h3>
+							<div class="flickr-widget">
+								<script type="text/javascript" src="./js/badge_code_v2.gne"></script>
+								<div class="clear"></div>
+							</div>
+						
+						</div>
+						<!-- end: Photo Stream -->
+
+				
+						<div class="span6">
+					
+							<!-- start: Follow Us -->
+							<h3>Find Me On The Grid!</h3>
+							<ul class="social-grid">
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-twitter">
+													<a href="https://twitter.com/BrianTeachman"></a>
+												</div>
+												<div class="social-info-back social-twitter-hover">
+													<a href="https://twitter.com/BrianTeachman"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-facebook">
+													<a href="https://www.facebook.com/brian.teachman"></a>
+												</div>
+												<div class="social-info-back social-facebook-hover">
+													<a href="https://www.facebook.com/brian.teachman"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-github">
+													<a href="https://github.com/brianteachman"></a>
+												</div>
+												<div class="social-info-back social-github-hover">
+													<a href="https://github.com/brianteachman"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="social-item">				
+										<div class="social-info-wrap">
+											<div class="social-info">
+												<div class="social-info-front social-youtube">
+													<a href="https://www.youtube.com/channel/UC-x1U61MdozIip2b4sIsivw"></a>
+												</div>
+												<div class="social-info-back social-youtube-hover">
+													<a href="https://www.youtube.com/channel/UC-x1U61MdozIip2b4sIsivw"></a>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- end: Follow Us -->
+					
+							<!-- start: Newsletter -->
+							<form id="newsletter">
+								<h3>Newsletter</h3>
+								<p>Please leave us your email</p>
+								<label for="newsletter_input">@:</label>
+								<input type="text" id="newsletter_input">
+								<input type="submit" id="newsletter_submit" value="submit">
+							</form>
+							<!-- end: Newsletter -->
+					
+						</div>
+					
+					</div>
+					<!-- end: Row -->	
+				
+				</div>
+				<!-- end: Container  -->
+
+			</div>
+			<!-- end: Footer -->
+	
+		</div>
+		<!-- end: Container  -->
+
+	</div>
+	<!-- end: Wrapper  -->
+
+
+	<!-- start: Copyright -->
+	<div id="copyright">
+	
+		<!-- start: Container -->
+		<div class="container">
+		
+			<div class="sixteen columns">
+				<p>
+					© <?= date('Y') ?>, Brian Teachman. <?php echo $this->translate('All rights reserved.') ?>
+				</p>
+			</div>
+	
+		</div>
+		<!-- end: Container  -->
+		
+	</div>	
+	<!-- end: Copyright -->
+
+<!-- start: Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<?php echo $this->inlineScript() ?>
+<script src="./js/jquery-1.8.2.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/flexslider.js"></script>
+<script src="./js/carousel.js"></script>
+<script def="" src="./js/custom.js"></script>
+<!-- end: Java Script -->
+
+
+
+</body></html>
