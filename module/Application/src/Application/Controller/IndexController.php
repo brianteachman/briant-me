@@ -57,7 +57,7 @@ class IndexController extends AbstractActionController
                 $this->flashMessenger()->addMessage(serialize($validData));
                 $this->sendContactForm($validData);
 
-                $this->redirect()->toUrl('home');
+                $this->redirect()->toUrl('/');
             }
         }
 
