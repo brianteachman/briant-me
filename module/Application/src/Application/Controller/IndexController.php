@@ -5,6 +5,9 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Zend\Captcha\Figlet as Captcha;
+use Zend\Mail;
+use Zend\Mime\Part as MimePart;
+use Zend\Mime\Message as MimeMessage;
 use Application\Form\ContactForm;
 
 
