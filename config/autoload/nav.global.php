@@ -20,6 +20,11 @@ return array(
                 'label' => 'Services',
                 'route' => 'services',
             ),
+
+            array(
+                'label' => 'FAQ',
+                'route' => 'faq',
+            ),
             // array(
             //     'label' => 'Pricing',
             //     'route' => 'pricing',
