@@ -1,0 +1,6 @@
+/* http://braint.me/faq */
+
+.accordion-group:hover {
+  background: #fcfcfc;
+  border: 1px solid #f6f6f6;
+}

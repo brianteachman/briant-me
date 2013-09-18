@@ -1,123 +1,410 @@
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/css/faq.css');
+?>
         <!--start: Container -->
         <div class="container">
+
+            <h1>frequently asked questions:</h1>
             
             <!-- start: Row -->
             <div class="row">
 
-                <div class="span4"></div>
+                <div class="span3"></div>
     
-                <div class="span8">
-                    
-                    <h1>frequently asked questions:</h1>
+                <div class="span9">
 
-                    <h3>1. What is the total price of this project?</h3>
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-group">
 
-                    <blockquote>
-                      
-                    </blockquote>
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#one">
+                                    <h3>
 
-                    <h3>2. How long will the project take?</h3>
+                                    1. What is the total price of this project?
 
-                    <blockquote>
-                      <p>It is hard to say. That depends on many variables such as the unique needs of problem/idea at hand, or the time it takes to get the materials needed from where ever they may be coming from, or many change request during the lifetime of the project.</p>
-                    </blockquote>
+                                    </h3>
+                                </a>
+                            </div>
+                            <div id="one" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
 
-                    <h3>3. What are your terms? <small>(all money up front? percentage down? installments?)</small></h3>
+                                    <!--  -->
 
-                    <blockquote>
-                      <p>If less than $1000, payment upfront. Otherwise typically, 50% gets the project started, 25% upon design approval, the final 25% procures the release of the final product and materials, deployment (if applicable), and 1 hour of training  (again, if applicable).</p>
-                    </blockquote>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-                    <h3>4. Do you offer any financing options?</h3>
+                        </div>
+                        <div class="accordion-group">
 
-                    <blockquote>
-                      <p>I do not provide loans for services provided as I am working here and need to feed my family. However, the fee schedule is flexible and under <em>most</em> circumstances projects can be completed in smaller peices that are completed as the budget permits.</p>
-                    </blockquote>
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#two">
+                                    <h3>
 
-                    <h3>5. Who owns my domain? <small>(if any)</small></h3>
+                                    2. How long will the project take?
 
-                    <blockquote>
-                      <p>If you already own it, then you do. If I purchase it for you during development, then ownership transfers upon final payment.</p>
-                    </blockquote>
+                                    </h3>
+                                </a>
+                            </div>
 
-                    <h3>6. Who owns my website files, and databases? <small>(if any)</small></h3>
+                            <div id="two" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
 
-                    <blockquote>
-                      
-                    </blockquote>
+                                    <p>It is hard to say. That depends on many variables such as the unique needs of problem/idea at hand, or the time it takes to get the materials needed from where ever they may be coming from, or many change request during the lifetime of the project.</p>
 
-                    <h3>7. How many total static (not dynamically-generated) pages are there?</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-                    <blockquote>
-                      
-                    </blockquote>
+                        </div>
+                        <div class="accordion-group">
 
-                    <h3>8. What are the functions my website makes available to my visitors?</h3>
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#three">
+                                    <h3>
 
-                    <blockquote>
-                      <p>Let's see... what did you have in mind? <a href="http://briant.me/contact">Contact me</a> and we'll discuss how we can meet your specific needs.</p>
-                    </blockquote>
+                                    3. What are your terms? <small>(all money up front? percentage down? installments?)</small>
 
-                    <h3>9. What are the admin functions my website makes available to me?</h3>
+                                    </h3>
+                                </a>
+                            </div>
 
-                    <blockquote>
-                      <p>Not all websites are equal in form, function, or intention. That being said, all user operated web applications that I produce allow, at a minimum, the ability to access an administrative backend behind a log in form. Where the user can manage thier user details and update editable content throughout the site (what exactly that will be, will be discovered through client contact, a site survey, and a needs analysis). Some of the the CMS's that I use like <a href="">WordPress</a> and <a href="">SilverStripe</a>, provide much more functionality such as allowing other members to create an account and giving them roles and responsibilty, or adding module and plugins to extend functionality, and much more.</p>
-                    </blockquote>
+                            <div id="three" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
 
-                    <h3>10. What can I alter without needing expert help?</h3>
+                                    <p>If less than $1000, payment upfront. Otherwise typically, 50% gets the project started, 25% upon design approval, the final 25% procures the release of the final product and materials, deployment (if applicable), and 1 hour of training  (again, if applicable).</p>
 
-                    <blockquote>
-                      <p>That entirely depends on your understanding and skillset. During our Content Planning Meeting we will discuss area's of the site that need to be editable, typically refered to as editable content. Also metadata such as Site title and meta tags for the bots like keywords and description.</p>
-                    </blockquote>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-                    <h3>11. During the development process, who is my primary contact?</h3>
+                        </div>
+                        <div class="accordion-group">
 
-                    <blockquote>
-                      <p>That'll be me, Brian Teachman.</p>
-                    </blockquote>
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#four">
+                                    <h3>
 
-                    <h3>12. How involved is my company in the development? Do we approve logos, mockups, etc.?</h3>
+                                    4. Do you offer any financing options?
 
-                    <blockquote>
-                      <p>Absolutely! During the <a href="">Content Planning Meeting</a> I do my best to understand and visualize how you want what you want. Then, any digital assets provided by me, are to be signed off by you the client before being used in production.</p>
-                    </blockquote>
+                                    </h3>
+                                </a>
+                            </div>
 
-                    <h3>13. Do you optimize our site for search engines? Is that included or extra?</h3>
+                            <div id="four" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
 
-                    <blockquote>
-                      <p>The initial search engine optimisation at the Launch of the site is included in all my web development. Any optimisations or updates after site launch will be a new invoice or proposal for a <a href="">Marketing Campaign</a>.</p>
-                    </blockquote>
+                                    <p>I do not provide loans for services provided as I am working here and need to feed my family. However, the fee schedule is flexible and under <em>most</em> circumstances projects can be completed in smaller peices that are completed as the budget permits.</p>
 
-                    <h3>14. Do you design or update my logo? Is that included or extra?</h3>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-                    <blockquote>
-                      <p>I do logo design/redesign, but it is extra.</p>
-                    </blockquote>
+                        </div>
+                        <div class="accordion-group">
 
-                    <h3>15. Do you put the items in my store/catalog/database, or do you create the categories and give me the ability to create and edit products myself?</h3>
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#five">
+                                    <h3>
 
-                    <blockquote>
-                      <p>Either way, I do charge for it though. ;-)</p>
-                    </blockquote>
+                                    5. Who owns my domain? <small>(if any)</small>
 
-                    <h3>16. What is your experience (design/programming/business management) that makes you capable of handling our project?</h3>
+                                    </h3>
+                                </a>
+                            </div>
 
-                    <blockquote>
-                      
-                    </blockquote>
+                            <div id="five" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
 
-                    <h3>17. How long have you been in business?</h3>
+                                    <p>If you already own it, then you do. If I purchase it for you during development, then ownership transfers upon final payment.</p>
 
-                    <blockquote>
-                      
-                    </blockquote>
+                                    </blockquote>
+                                </div>
+                            </div>
 
-                    <h3>18. What sets you apart from other website companies?</h3>
+                        </div>
+                        <div class="accordion-group">
 
-                    <blockquote>
-                      
-                    </blockquote>
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#six">
+                                    <h3>
 
+                                    6. Who owns my website files, and databases? <small>(if any)</small>
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="six" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p></p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion7" href="#seven">
+                                    <h3>
+
+                                    7. How many total static (not dynamically-generated) pages are there?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="seven" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion8" href="#eight">
+                                    <h3>
+
+                                    8. What are the functions my website makes available to my visitors?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="eight" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>Let's see... what did you have in mind? <a href="http://briant.me/contact">Contact me</a> and we'll discuss how we can meet your specific needs.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion9" href="#nine">
+                                    <h3>
+
+                                    9. What are the admin functions my website makes available to me?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="nine" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>Not all websites are equal in form, function, or intention. That being said, all user operated web applications that I produce allow, at a minimum, the ability to access an administrative backend behind a log in form. Where the user can manage thier user details and update editable content throughout the site (what exactly that will be, will be discovered through client contact, a site survey, and a needs analysis). Some of the the CMS's that I use like <a href="">WordPress</a> and <a href="">SilverStripe</a>, provide much more functionality such as allowing other members to create an account and giving them roles and responsibilty, or adding module and plugins to extend functionality, and much more.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion10" href="#ten">
+                                    <h3>
+
+                                    10. What can I alter without needing expert help?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="ten" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>That entirely depends on your understanding and skillset. During our Content Planning Meeting we will discuss area's of the site that need to be editable, typically refered to as editable content. Also metadata such as Site title and meta tags for the bots like keywords and description.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion11" href="#eleven">
+                                    <h3>
+
+                                    11. During the development process, who is my primary contact?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="eleven" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>That'll be me, Brian Teachman.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion12" href="#twelve">
+                                    <h3>
+
+                                    12. How involved is my company in the development? Do we approve logos, mockups, etc.?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="twelve" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>Absolutely! During the <a href="">Content Planning Meeting</a> I do my best to understand and visualize how you want what you want. Then, any digital assets provided by me, are to be signed off by you the client before being used in production.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion13" href="#thirteen">
+                                    <h3>
+
+                                    13. Do you optimize our site for search engines? Is that included or extra?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="thirteen" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>The initial search engine optimisation at the Launch of the site is included in all my web development. Any optimisations or updates after site launch will be a new invoice or proposal for a <a href="">Marketing Campaign</a>.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion14" href="#fourteen">
+                                    <h3>
+
+                                    14. Do you design or update my logo? Is that included or extra?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="fourteen" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>I do logo design/redesign, but it is extra.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion15" href="#fifteen">
+                                    <h3>
+
+                                    15. Do you put the items in my store/catalog/database, or do you create the categories and give me the ability to create and edit products myself?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="fifteen" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>Either way, I do charge for it though. ;-)</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion16" href="#sixteen">
+                                    <h3>
+
+                                    16. What is your experience (design/programming/business management) that makes you capable of handling our project?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="sixteen" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p></p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-group">
+
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion17" href="#seventeen">
+                                    <h3>
+
+                                    17. How long have you been in business?
+
+                                    </h3>
+                                </a>
+                            </div>
+
+                            <div id="seventeen" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <blockquote>
+
+                                    <p>I have been offering freelance web development since 2008.</p>
+
+                                    </blockquote>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
@@ -126,7 +413,7 @@
             <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
                 <p>
-                    <a href="/contact" class="btn btn-success btn-large">Contact Me »</a> We'll package up your idea!
+                    If you have a more specific inquery or think of something I should add, please <a href="/contact" class="btn btn-success btn-large">contact me</a>
                 </p>
             </div>
             <!-- end: Hero Unit -->
