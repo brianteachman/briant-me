@@ -38,6 +38,11 @@ class IndexController extends AbstractActionController
         return new ViewModel();
     }
 
+    public function termsAction()
+    {
+        return new ViewModel();
+    }
+
     public function contactAction()
     {
         // configure captcha and in inject into ContactForm
