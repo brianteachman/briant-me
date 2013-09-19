@@ -104,7 +104,7 @@
 										</div>
 									</div>
 								</li>
-								<li>
+								<!-- <li>
 									<div class="social-small-item">				
 										<div class="social-small-info-wrap">
 											<div class="social-small-info">
@@ -117,7 +117,7 @@
 											</div>
 										</div>
 									</div>
-								</li>
+								</li> -->
 								<li>
 									<div class="social-small-item">				
 										<div class="social-small-info-wrap">
@@ -132,7 +132,7 @@
 										</div>
 									</div>
 								</li>
-								<li>
+								<!-- <li>
 									<div class="social-small-item">				
 										<div class="social-small-info-wrap">
 											<div class="social-small-info">
@@ -145,7 +145,7 @@
 											</div>
 										</div>
 									</div>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 					</div>
@@ -273,7 +273,7 @@
 						
 							<h3>About Me</h3>
 							<p>
-								As a freelance web developer with 7 years experience listening to clients needs and producing what they needed on time, I can help your presence online. I am most interested in finding problems that can and should be automated and developing eloquent solutions for them.
+								A freelance web developer with 7 years experience listening to clients needs and producing what they needed on time, I can help your presence online. I am most interested in finding problems that can and should be automated and developing eloquent solutions for them.
 							</p>
 							
 						</div>
@@ -357,13 +357,13 @@
 							<!-- end: Follow Us -->
 					
 							<!-- start: Newsletter -->
-							<form id="newsletter">
+							<!-- <form id="newsletter">
 								<h3>Newsletter</h3>
 								<p>Please leave us your email</p>
 								<label for="newsletter_input">@:</label>
 								<input type="text" id="newsletter_input">
 								<input type="submit" id="newsletter_submit" value="submit">
-							</form>
+							</form> -->
 							<!-- end: Newsletter -->
 					
 						</div>
@@ -390,9 +390,9 @@
 		<!-- start: Container -->
 		<div class="container">
 		
-			<div class="sixteen columns">
+			<div class="span12">
 				<p>
-					© <?= date('Y') ?>, Brian Teachman. <?php //echo $this->translate('All rights reserved.') ?><a href="terms">terms and conditions</a>.
+					© <?= date('Y') ?>, Brian Teachman. <a href="terms"><?php echo $this->translate('terms and conditions') ?></a>.
 				</p>
 			</div>
 	
@@ -403,15 +403,11 @@
 	<!-- end: Copyright -->
 
 <!-- start: Java Script -->
-<!-- Placed at the end of the document so the pages load faster -->
+<script src="<?= $this->serverUrl() ?>/js/jquery-1.8.2.js"></script>
+<script src="<?= $this->serverUrl() ?>/js/bootstrap.js"></script>
+<script def="" src="<?= $this->serverUrl() ?>/js/custom.js"></script>
 <?php echo $this->inlineScript() ?>
-<script src="./js/jquery-1.8.2.js"></script>
-<script src="./js/bootstrap.js"></script>
-<script src="./js/flexslider.js"></script>
-<script src="./js/carousel.js"></script>
-<script def="" src="./js/custom.js"></script>
 <!-- end: Java Script -->
 
-
-
-</body></html>
+</body>
+</html>
