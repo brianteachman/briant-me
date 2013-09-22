@@ -33,6 +33,7 @@
 	
 
     <!-- start: CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
 	<?php echo $this->headLink()
 					->appendStylesheet($this->basePath() . '/css/bootstrap.css')
 					->appendStylesheet($this->basePath() . '/css/bootstrap-responsive.css')
@@ -51,10 +52,14 @@
     <![endif]-->
 
 	<style type="text/css">
+	#wrapper {
+		font-family: 'Libre Baskerville', serif !important;
+	}
 	a.brand {
-		font-family: "Boogaloo" !important;
-		font-size: 55px;
-		font-weight: normal;
+		/*font-family: "Boogaloo" !important;*/
+		font-family: Verdana;
+		font-size: 50px;
+		font-weight: 600;
 		color: rgb(102, 102, 102);
 		display: block;
 		margin-top: 35px;
@@ -78,7 +83,7 @@
 				<div class="row">
 					
 					<!--start: Logo -->
-					<div class="logo span4">
+					<div class="logo span6">
 						<a class="brand" href="<?= $this->serverUrl() ?>">
 							Brian Teachman
 							<!-- <img src="./img/logo.png"> -->
@@ -87,7 +92,7 @@
 					<!--end: Logo -->
 					
 					<!--start: Social Links -->
-					<div class="span8">
+					<div class="span6">
 						<div id="social-links">
 							<ul class="social-small-grid">
 								<li>
@@ -221,19 +226,11 @@
 						
 							<div id="footer-menu-links">
 
-								<ul id="footer-nav">
-
-									<li><a href="<?= $this->serverUrl ?>/">Start</a></li>
-
-									<!-- <li><a href="<?= $this->serverUrl ?>/about">About</a></li> -->
-
-									<li><a href="<?= $this->serverUrl ?>/services">Services</a></li>
-
-									<!-- <li><a href="<?= $this->serverUrl ?>/pricing">Pricing</a></li> -->
-								
-									<li><a href="<?= $this->serverUrl ?>/contact">Contact</a></li>
-
-								</ul>
+								<?php echo $this->navigation('navigation')
+												->menu()
+                                    			->setMinDepth(0)
+                                    			->setMaxDepth(0)
+                                    			->setUlClass('footer-nav'); ?>
 
 							</div>
 						

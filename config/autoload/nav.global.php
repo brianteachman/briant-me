@@ -8,18 +8,18 @@ return array(
     ),
     'navigation' => array(
         'default' => array(
-            array(
-                'label' => 'Home',
-                'route' => 'home',
-            ),
+            // array(
+            //     'label' => 'Home',
+            //     'route' => 'home',
+            // ),
             // array(
             //     'label' => 'About',
             //     'route' => 'about',
             // ),
-            array(
-                'label' => 'Services',
-                'route' => 'services',
-            ),
+            // array(
+            //     'label' => 'Services',
+            //     'route' => 'services',
+            // ),
 
             array(
                 'label' => 'FAQ',
